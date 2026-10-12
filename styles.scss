@@ -92,3 +92,12 @@ div.sourceCode:not(:has(pre.prompt)) { background: var(--warm-soft) !important; 
 .setup-card img { background: #fff; border: 1px solid var(--warm-border); border-radius: 6px; display: block; height: auto; margin: 0 0 0.6rem; width: 100%; }
 .setup-card p { font-size: 0.97rem; margin: 0; }
 .setup-card figure, .setup-card .quarto-figure { margin: 0; }
+
+/* Phone: jump links as an even grid instead of ragged pills */
+@media (max-width: 600px) {
+  .jump, .jump p { display: block; margin: 0; }
+  .jump p { display: grid; gap: 0.5rem; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .jump a { display: block; padding: 0.45rem 0.5rem; text-align: center; text-decoration: none !important; }
+  .jump a.primary { grid-column: 1 / -1; }
+  .hero h1 { font-size: 2rem; }
+}

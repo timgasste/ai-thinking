@@ -90,25 +90,25 @@ In ChatGPT, Work reaches a folder on your computer through a **project**. Four c
 ::: {.setup-card}
 ![](assets/chatgpt-setup-1.png){fig-alt="ChatGPT desktop app: the Work tab at the top and the plus button next to Projects."}
 
-**1.** Choose **Work** at the top of the window, then the **+** next to Projects.
+**1.** Choose **Work** at the top of the window, then click the **+** next to Projects.
 :::
 
 ::: {.setup-card}
 ![](assets/chatgpt-setup-2.png){fig-alt="Create project dialog with a project name and the ai-lab folder added."}
 
-**2.** Give the project a name, click **Add**, pick **Documents → ai-lab**, and click **Create project**.
+**2.** Click **Add folder**, pick **ai-lab** in your Documents folder, and click **Open**. Give the project any name at the top, then click **Create project**.
 :::
 
 ::: {.setup-card}
 ![](assets/chatgpt-setup-3.png){fig-alt="Trust this folder dialog with the Trust folder button."}
 
-**3.** Click **Trust folder**. The agent can now read and save files in `ai-lab`, and nowhere else.
+**3.** Click **Trust folder**. The agent can now read and save files in the ai-lab folder on your computer, and nowhere else.
 :::
 
 ::: {.setup-card}
 ![](assets/chatgpt-setup-4.png){fig-alt="The Work message box inside the project, with Ask for approval and the default model."}
 
-**4.** Ready. Keep **Ask for approval** on and the default model (6 Luna Medium). Paste your first task.
+**4.** Ready. Keep **Ask for approval** on and the default model (6 Luna Medium). Then paste your first task.
 :::
 :::
 
@@ -170,6 +170,8 @@ Get a hard idea explained the way you learn best. Saves the script in `outputs/`
 Read my INSTRUCTIONS file. Explain [hard concept] from sources/ at my level, as a three-minute script I can listen to. Save it in outputs/.
 ```
 :::
+
+**Done early?** Try another option.
 
 **Afterwards:** tell your neighbor one thing the agent got wrong, or one thing you now understand better.
 
