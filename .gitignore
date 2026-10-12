@@ -5,3 +5,6 @@
 # Build copies of the deck export; the published copies live in docs/
 /slides/
 /downloads/
+
+/.quarto/
+**/*.quarto_ipynb

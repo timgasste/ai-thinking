@@ -75,7 +75,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-5c1318cf63eba56dbef7ba16bc7d56f5.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ebb520b9891a0f79485085d38324733c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-b2a0b2ccdf72ba7c5adaa5899e0a015c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -109,9 +109,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#basics" id="toc-basics" class="nav-link active" data-scroll-target="#basics">Three basics before you start</a></li>
+  <li><a href="#get-ready" id="toc-get-ready" class="nav-link active" data-scroll-target="#get-ready">Get ready at the start</a></li>
+  <li><a href="#basics" id="toc-basics" class="nav-link" data-scroll-target="#basics">Basic setup: folder, agent, instructions</a></li>
   <li><a href="#exercise-1" id="toc-exercise-1" class="nav-link" data-scroll-target="#exercise-1">Exercise 1: Set up your local agent</a></li>
   <li><a href="#exercise-2" id="toc-exercise-2" class="nav-link" data-scroll-target="#exercise-2">Exercise 2: Put your agent to work</a></li>
+  <li><a href="#keep-going" id="toc-keep-going" class="nav-link" data-scroll-target="#keep-going">Keep going after today</a></li>
+  <li><a href="#tools" id="toc-tools" class="nav-link" data-scroll-target="#tools">Which tool?</a></li>
+  <li><a href="#question-engineering" id="toc-question-engineering" class="nav-link" data-scroll-target="#question-engineering">Question engineering</a></li>
   <li><a href="#more-prompts" id="toc-more-prompts" class="nav-link" data-scroll-target="#more-prompts">More prompts from the lecture</a></li>
   <li><a href="#responsibly" id="toc-responsibly" class="nav-link" data-scroll-target="#responsibly">Use it responsibly</a></li>
   <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
@@ -154,27 +158,41 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Tim Gåsste · Department of Peace and Conflict Research, Uppsala University</p>
 </div>
 <div class="jump">
-<p><a href="#exercise-1" class="primary">Exercise 1</a> <a href="#exercise-2">Exercise 2</a> <a href="#slides">Slides</a> <a href="#sources">Sources</a></p>
+<p><a href="#get-ready" class="primary">Get ready</a> <a href="#exercise-1">Exercise 1</a> <a href="#exercise-2">Exercise 2</a> <a href="#slides">Slides</a> <a href="#sources">Sources</a></p>
 </div>
+<p><a href="downloads/ai-lab.zip" class="download-bar"><strong>Download the ai-lab starter folder</strong> (.zip, with the slides inside)</a></p>
 </section>
 </div>
 <div class="notice">
-<p><strong>Important:</strong> this is an inspirational lecture on thinking with AI. It is <strong>not a general permission to use AI in your studies.</strong> Always follow the AI rules for your course module, and ask your course convener when in doubt. The views and workflows here are my own; they build on the commentators listed under <a href="#sources">Sources</a>.</p>
+<p><strong>Important:</strong> this is an inspirational lecture on thinking with AI. It is <strong>not a general permission to use AI in your studies.</strong> Always follow the AI rules for your course module, and ask your course convener when in doubt. The views and workflows here are my own. They build on the commentators listed under <a href="#sources">Sources</a>.</p>
 </div>
+<section id="get-ready" class="level2">
+<h2 class="anchored" data-anchor-id="get-ready">Get ready at the start</h2>
+<p>Do this at the start of the lecture. The download runs in the background while we talk, and you will need the app in Exercise 1.</p>
+<div class="steps">
+<ol type="1">
+<li><strong>Download the ChatGPT desktop app</strong> for Mac, Windows, or Linux from OpenAI’s <a href="https://learn.chatgpt.com/docs/quickstart">quickstart page</a>.</li>
+<li><strong>Open it and create a free account</strong>, or log in to the one you have.</li>
+<li><strong><a href="downloads/ai-lab.zip">Download the ready-made ai-lab folder</a></strong> and unzip it into your <strong>Documents</strong> folder.</li>
+</ol>
+</div>
+<p><strong>A free account is enough,</strong> today and after the lecture. See <a href="#keep-going">Keep going after today</a>.</p>
+<p>Stuck, or just curious? Ask at any point. There are no stupid questions about AI.</p>
+</section>
 <section id="basics" class="level2">
-<h2 class="anchored" data-anchor-id="basics">Three basics before you start</h2>
+<h2 class="anchored" data-anchor-id="basics">Basic setup: folder, agent, instructions</h2>
 <div class="basics">
 <section id="a-folder-on-your-computer" class="level4 basic">
 <h4 class="anchored" data-anchor-id="a-folder-on-your-computer"><span>1</span> A folder on your computer</h4>
 <p>An ordinary folder in Finder (Mac) or File Explorer (Windows), not something inside the AI app. You choose which folder the agent may open.</p>
 </section>
-<section id="the-app-becomes-an-agent" class="level4 basic">
-<h4 class="anchored" data-anchor-id="the-app-becomes-an-agent"><span>2</span> The app becomes an agent</h4>
-<p>In <strong>Work</strong> mode, the app reads the files in that folder, works on your task step by step, and saves new files there. You check and decide.</p>
+<section id="the-app-deploys-an-agent" class="level4 basic">
+<h4 class="anchored" data-anchor-id="the-app-deploys-an-agent"><span>2</span> The app deploys an agent</h4>
+<p>Create a project from that folder, and the app does more than chat. Its agent reads the files, works on your task step by step, and saves new files there. You check and decide. In ChatGPT this happens in <strong>Work</strong>, and other apps have their own name for it.</p>
 </section>
 <section id="instructions-in-a-text-file" class="level4 basic">
 <h4 class="anchored" data-anchor-id="instructions-in-a-text-file"><span>3</span> Instructions in a text file</h4>
-<p><strong>Markdown</strong> (<code>.md</code>) is plain text with a few marks: <code>#</code> for a heading, <code>-</code> for a bullet. Models read it most reliably. <strong>A Word file works too.</strong></p>
+<p><strong>Markdown</strong> (<code>.md</code>) is plain text with a few marks: <code>#</code> for a heading, <code>-</code> for a bullet. Models read it most reliably.</p>
 </section>
 </div>
 <p>A Markdown instructions file can be this short:</p>
@@ -182,65 +200,120 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>MSc student in peace and conflict research</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Quiz me before you explain</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Ask before you overwrite a file</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="word-tip">
+<p><strong>Prefer Word to Markdown, or Excel to <code>.csv</code>?</strong> That is completely fine. What matters is that the model gets your information as text and numbers, in a form that fits you and your workflow.</p>
+</div>
 </section>
 <section id="exercise-1" class="level2">
 <h2 class="anchored" data-anchor-id="exercise-1">Exercise 1: Set up your local agent</h2>
 <p><span class="timer">10 minutes</span> Build the “harness” you will use for the rest of the lecture: a folder, an agent that can work in it, and a standing instructions file.</p>
-<div class="download">
-<p>Don’t want to make folders by hand? Download the ready-made <strong>ai-lab</strong> folder (with this lecture’s slides in <code>sources/</code>) and unzip it anywhere on your computer.</p>
-<p><a href="downloads/ai-lab.zip" class="button">Download ai-lab.zip</a></p>
+<section id="open-your-folder-in-chatgpt" class="level3">
+<h3 class="anchored" data-anchor-id="open-your-folder-in-chatgpt">Open your folder in ChatGPT</h3>
+<p>In ChatGPT, Work reaches a folder on your computer through a <strong>project</strong>. Four clicks:</p>
+<div class="setup-grid">
+<div class="setup-card">
+<p><img src="assets/chatgpt-setup-1.png" class="img-fluid" alt="ChatGPT desktop app: the Work tab at the top and the plus button next to Projects."></p>
+<p><strong>1.</strong> Choose <strong>Work</strong> at the top of the window, then the <strong>+</strong> next to Projects.</p>
 </div>
+<div class="setup-card">
+<p><img src="assets/chatgpt-setup-2.png" class="img-fluid" alt="Create project dialog with a project name and the ai-lab folder added."></p>
+<p><strong>2.</strong> Give the project a name, click <strong>Add</strong>, pick <strong>Documents → ai-lab</strong>, and click <strong>Create project</strong>.</p>
+</div>
+<div class="setup-card">
+<p><img src="assets/chatgpt-setup-3.png" class="img-fluid" alt="Trust this folder dialog with the Trust folder button."></p>
+<p><strong>3.</strong> Click <strong>Trust folder</strong>. The agent can now read and save files in <code>ai-lab</code>, and nowhere else.</p>
+</div>
+<div class="setup-card">
+<p><img src="assets/chatgpt-setup-4.png" class="img-fluid" alt="The Work message box inside the project, with Ask for approval and the default model."></p>
+<p><strong>4.</strong> Ready. Keep <strong>Ask for approval</strong> on and the default model (6 Luna Medium). Paste your first task.</p>
+</div>
+</div>
+</section>
+<section id="then-do-the-exercise" class="level3">
+<h3 class="anchored" data-anchor-id="then-do-the-exercise">Then do the exercise</h3>
 <div class="steps">
 <ol type="1">
-<li><strong>Create a normal folder on your computer</strong> (anywhere, e.g.&nbsp;in Documents) called <code>ai-lab</code>, with two subfolders: <code>sources</code> and <code>outputs</code>. Or use the download above.</li>
-<li><strong>Open the ChatGPT desktop app</strong> (a free account works), or an app you already use that can work in a folder. Choose <strong>Work</strong> and open <code>ai-lab</code>.</li>
-<li><strong>Give it the task below</strong>, and answer its questions.</li>
-<li><strong>Open <code>INSTRUCTIONS.md</code>.</strong> Check it, and change one thing yourself.</li>
+<li><strong>Find the <code>ai-lab</code> folder in your Documents folder.</strong> No download? <a href="downloads/ai-lab.zip">Get it here</a>, or create a normal folder called <code>ai-lab</code> there yourself, with two subfolders: <code>sources</code> and <code>outputs</code>.</li>
+<li><strong>In the ChatGPT desktop app, choose Work and create a project from <code>ai-lab</code></strong>, as shown above. Another app whose agent can work in a folder works too.</li>
+<li><strong>Give it the task below</strong>, and answer its five questions. Short answers are fine.</li>
+<li><strong>Open <code>INSTRUCTIONS.md</code> (or <code>.docx</code>).</strong> Check it, and change one thing yourself.</li>
 </ol>
 </div>
 <p>Your first task:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode markdown prompt code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>Interview me with five short questions, one at a time, about my studies, my goals, and how I want you to help me learn. Then save my answers and these rules as INSTRUCTIONS.md in this folder: use only files in this folder, never invent sources, and ask before you overwrite a file.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="word-tip">
-<p><strong>Prefer Word?</strong> Ask for <code>INSTRUCTIONS.docx</code> instead of <code>INSTRUCTIONS.md</code>. Markdown is plain text, which models read most reliably, but a Word file works too.</p>
+<p><strong>Prefer Word?</strong> Ask for <code>INSTRUCTIONS.docx</code> instead of <code>INSTRUCTIONS.md</code>. It takes about a minute longer. Markdown is plain text, which models read most reliably, but a Word file works too.</p>
 </div>
-<p><strong>No Work mode on your account?</strong> Pair up with a neighbour, or paste the task into a normal chat and save the answer as <code>INSTRUCTIONS.md</code> (or a Word file) yourself.</p>
+<p><strong>Finished early?</strong> Ask the agent to change your instructions, for example “Update INSTRUCTIONS.md so that you always answer in Swedish.” Watch it ask for your permission first. Those are your instructions at work.</p>
+<p><strong>Struggling to get the agent working on your computer?</strong> Pair up with a neighbor, or paste the task into a normal chat and save the answer as <code>INSTRUCTIONS.md</code> (or <code>.docx</code>) yourself.</p>
+</section>
 </section>
 <section id="exercise-2" class="level2">
 <h2 class="anchored" data-anchor-id="exercise-2">Exercise 2: Put your agent to work</h2>
-<p><span class="timer">10 minutes</span> In <code>ai-lab</code>, put material in <code>sources/</code>: this lecture’s PDF (already there if you downloaded the folder) or your own notes. Word files and PDFs are fine. Then pick <strong>one</strong> option and replace the [brackets] with your own concept or argument.</p>
+<p><span class="timer">10 minutes</span> Use this lecture’s PDF in <code>sources/</code> (already there if you downloaded the folder), or add your own notes. Word files, PDFs, and spreadsheets are fine. Then <strong>pick one option. One is enough.</strong> Replace the [brackets] with your own concept or argument.</p>
+<p>Every prompt starts with <strong>“Read my INSTRUCTIONS file,”</strong> because the agent does not read it on its own, and ends by saying <strong>where to save</strong>, because otherwise it only answers in the chat.</p>
 <section id="a-study-partner" class="level3 option">
 <h3 class="anchored" data-anchor-id="a-study-partner"><span class="letter">A</span> Study partner</h3>
-<p>Practise retrieval on something you need to know. Saves <code>outputs/flashcards.csv</code>.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode markdown prompt code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>Quiz me on <span class="co">[</span><span class="ot">concept</span><span class="co">]</span> using only sources/, one question at a time. Then save flashcards for my weak spots.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Practice retrieval on something you need to know. Saves flashcards in <code>outputs/</code> (ask for an Excel file if you prefer).</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode markdown prompt code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>Read my INSTRUCTIONS file. Quiz me on <span class="co">[</span><span class="ot">concept</span><span class="co">]</span> using only sources/, three questions, one at a time. Then save flashcards for my weak spots in outputs/.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="b-sparring-partner" class="level3 option">
 <h3 class="anchored" data-anchor-id="b-sparring-partner"><span class="letter">B</span> Sparring partner</h3>
-<p>Stress-test an argument you are working on. Saves <code>outputs/steelman.md</code>.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode markdown prompt code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>Steelman the strongest objection to <span class="co">[</span><span class="ot">my argument</span><span class="co">]</span> and list my unsupported leaps. Do not rewrite my text.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Stress-test an argument you are working on. Saves the critique in <code>outputs/</code> (ask for Word if you prefer).</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode markdown prompt code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>Read my INSTRUCTIONS file. Steelman the strongest objection to <span class="co">[</span><span class="ot">my argument</span><span class="co">]</span> and list my unsupported leaps. Do not rewrite my text. Save it in outputs/.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="c-explain-and-listen" class="level3 option">
 <h3 class="anchored" data-anchor-id="c-explain-and-listen"><span class="letter">C</span> Explain and listen</h3>
-<p>Get a hard idea explained the way you learn best. Saves <code>outputs/explainer.md</code>. Many apps can read the script aloud.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode markdown prompt code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>Explain <span class="co">[</span><span class="ot">hard concept</span><span class="co">]</span> at my level, with an example from my field, as a three-minute script I can listen to.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Get a hard idea explained the way you learn best. Saves the script in <code>outputs/</code>. Click the speaker icon under the answer to hear it read aloud.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode markdown prompt code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>Read my INSTRUCTIONS file. Explain <span class="co">[</span><span class="ot">hard concept</span><span class="co">]</span> from sources/ at my level, as a three-minute script I can listen to. Save it in outputs/.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<p><strong>Afterwards:</strong> tell your neighbour one thing the agent got wrong, or one thing you now understand better.</p>
+<p><strong>Afterwards:</strong> tell your neighbor one thing the agent got wrong, or one thing you now understand better.</p>
+</section>
+<section id="keep-going" class="level2">
+<h2 class="anchored" data-anchor-id="keep-going">Keep going after today</h2>
+<p>The free plan goes a long way. On ChatGPT Free, Work (and the related agents, such as Codex) has a <strong>monthly usage limit</strong>, and ordinary chats do not count toward it. When I tested every step of both exercises on a free account, it used <strong>about 6%</strong> of that monthly allowance.</p>
+<ul>
+<li><strong>Keep the default model</strong> (6 Luna Medium in October 2026). It was fast, accurate, and stayed within the sources.</li>
+<li><strong>See what you have left</strong> under Settings → Usage &amp; billing.</li>
+<li><strong>Make it a habit.</strong> Keep the <code>ai-lab</code> project. Before a seminar, ask your study partner to quiz you on the readings. Before you hand in a draft, ask your sparring partner for the strongest objection.</li>
+</ul>
+<p>Limits and model names change. These figures are from October 2026.</p>
+</section>
+<section id="tools" class="level2">
+<h2 class="anchored" data-anchor-id="tools">Which tool?</h2>
+<ul>
+<li><strong>Start here:</strong> choose one general assistant (ChatGPT, Claude, Gemini, Grok, Microsoft Copilot, or Perplexity), use it, and learn it well. That is where you get the most value for the least effort.</li>
+<li><strong>Answers only from your own documents:</strong> NotebookLM, now called Gemini Notebook, answers from the documents you give it and cites the passage behind each answer. Use it when nothing else should creep in: a contract, a court ruling, a policy, or your course readings.</li>
+<li><strong>Literature:</strong> Elicit, Semantic Scholar, Scite, and Litmaps help you discover and assess research. Zotero manages your references.</li>
+<li><strong>Agents in a folder:</strong> ChatGPT (Work and Codex), Claude, GitHub Copilot, and Cursor can work inside a project folder.</li>
+</ul>
+</section>
+<section id="question-engineering" class="level2">
+<h2 class="anchored" data-anchor-id="question-engineering">Question engineering</h2>
+<p>You do not need intricate, extensive prompt strategies. Strong models plan the steps better than our scripts do, and over-specifying imposes our own, often flawed, framing of the problem. What still matters is that you <strong>frame a great question</strong>: a clear goal, real context, and your standard of quality. Call it question engineering.</p>
+<section id="anatomy-of-a-good-question" class="level3">
+<h3 class="anchored" data-anchor-id="anatomy-of-a-good-question">Anatomy of a good question</h3>
+<p>This is the long version, written out in full for a research task. Most questions need only a few of these elements. The numbers mark them: task, purpose, context, material, constraints, format, evaluation, and interaction.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode markdown prompt code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>(1) Help me assess whether political exclusion increases the risk of organized political violence. (2) I want to sharpen a research question before drafting a theory section, not receive a finished argument. (3) I am working in peace and conflict research and preparing a graduate seminar memo, so focus on mechanisms, scope conditions, alternative explanations, and observable implications. (4) Use only the notes and source excerpts I paste below. (5) Separate author claims from your inferences, mark unsupported claims as "needs source", and do not invent citations. (6) Return a four-step causal pathway, two counterarguments, three questions I must answer, and one next prompt. (7) A strong answer is specific, source-bounded, mechanism-focused, and honest about uncertainty. (8) Ask one clarifying question if needed, then wait for my response before revising the research question.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
 </section>
 <section id="more-prompts" class="level2">
 <h2 class="anchored" data-anchor-id="more-prompts">More prompts from the lecture</h2>
 <section id="your-study-partner-socratic-tutor" class="level3">
 <h3 class="anchored" data-anchor-id="your-study-partner-socratic-tutor">Your study partner (Socratic tutor)</h3>
-<p>A Socratic tutor teaches by asking rather than telling: one question at a time, hints when you are stuck, and an explanation only after you have tried. The set-up matters. In a large field experiment, students with a plain chatbot did better while practising but worse on a later exam without AI, while a tutor-style version that gave hints instead of answers avoided that drop (<a href="https://doi.org/10.1073/pnas.2422633122">Bastani et al.&nbsp;2025</a>).</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode markdown prompt code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>Read INSTRUCTIONS.md. Using only sources/, quiz me on the hardest concept, one question at a time, and wait for my answer before you explain. Then save flashcards for my weak spots in outputs/.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>A Socratic tutor teaches by asking rather than telling: one question at a time, hints when you are stuck, and an explanation only after you have tried. The set-up matters. In a large field experiment, students with a plain chatbot did better while practicing but worse on a later exam without AI, while a tutor-style version that gave hints instead of answers avoided that drop (<a href="https://doi.org/10.1073/pnas.2422633122">Bastani et al.&nbsp;2025</a>).</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode markdown prompt code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>Read my INSTRUCTIONS file. Using only sources/, quiz me on the hardest concept, one question at a time, and wait for my answer before you explain. Then save flashcards for my weak spots in outputs/.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="your-sparring-partner" class="level3">
 <h3 class="anchored" data-anchor-id="your-sparring-partner">Your sparring partner</h3>
-<p>The AI critiques; you revise and write. Put your outline in a <code>working/</code> folder first.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode markdown prompt code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>Read INSTRUCTIONS.md and working/outline.md. Do not rewrite my text. Steelman the strongest objection, list my unsupported leaps, and save both in outputs/. Then ask me three hard questions.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The AI critiques, and you revise and write. Put your outline in a <code>working/</code> folder first (a Word file is fine).</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode markdown prompt code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>Read my INSTRUCTIONS file and working/outline.md. Do not rewrite my text. Steelman the strongest objection, list my unsupported leaps, and save both in outputs/. Then ask me three hard questions.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="anatomy-of-a-good-question" class="level3">
-<h3 class="anchored" data-anchor-id="anatomy-of-a-good-question">Anatomy of a good question</h3>
-<p>You do not need prompt templates any more, but a good question still says what you want, why, what you know, which material to use, what to avoid, and how you will judge the answer. The numbers mark the eight elements: task, purpose, context, material, constraints, format, evaluation, and interaction.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode markdown prompt code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>(1) Help me assess whether political exclusion increases the risk of organized political violence. (2) I want to sharpen a research question before drafting a theory section, not receive a finished argument. (3) I am working in peace and conflict research and preparing a graduate seminar memo, so focus on mechanisms, scope conditions, alternative explanations, and observable implications. (4) Use only the notes and source excerpts I paste below. (5) Separate author claims from your inferences, mark unsupported claims as "needs source", and do not invent citations. (6) Return a four-step causal pathway, two counterarguments, three questions I must answer, and one next prompt. (7) A strong answer is specific, source-bounded, mechanism-focused, and honest about uncertainty. (8) Ask one clarifying question if needed, then wait for my response before revising the research question.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="working-with-data" class="level3">
+<h3 class="anchored" data-anchor-id="working-with-data">Working with data</h3>
+<p>Put your output or script in <code>sources/</code> first (a text file, a Word file, or a screenshot). Without it, the agent says it cannot see any output rather than inventing numbers. The model explains, and you decide what the numbers mean.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode markdown prompt code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>Read my INSTRUCTIONS file. Explain the regression output in sources/ line by line, at my level. Tell me what I can and cannot conclude from it, and do not invent any numbers.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode markdown prompt code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>Read my INSTRUCTIONS file. Comment my R script in sources/ line by line so I understand each step. Suggest one improvement, but do not change what the script does without asking me.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 </section>
 <section id="responsibly" class="level2">
@@ -249,14 +322,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><strong>Confidentiality and copyright.</strong> Do not upload confidential data or copyrighted material without approval or clearance. Your own notes and this lecture’s slides are fine.</li>
 <li><strong>File access.</strong> The agent can edit files. Give it one folder, not your whole computer, and ask it to check with you before overwriting anything.</li>
 <li><strong>Verification.</strong> Tell it never to invent sources, and check every number, quote, and source yourself. You remain responsible for your work.</li>
-<li><strong>Make the knowledge yours.</strong> If you cannot explain and defend it, it is not yours yet.</li>
+<li><strong>Know when to close the AI.</strong> When learning has to stick, try it on your own first. Then use AI to check your answer and go deeper.</li>
+<li><strong>Make the knowledge yours.</strong> If you cannot explain and defend it, it is not yours yet. Develop your own capacity to think and learn, and use AI to amplify it.</li>
 </ul>
 </section>
 <section id="slides" class="level2">
 <h2 class="anchored" data-anchor-id="slides">Slides</h2>
 <div class="slides-card">
 <p><a href="slides/index.html"><strong>Open the slides</strong> Interactive version in your browser</a></p>
-<p><a href="downloads/why-and-how-to-think-with-ai.pdf"><strong>Download the PDF</strong> Static version for reading and notes</a></p>
+<p><a href="downloads/why-and-how-to-think-with-ai.pdf"><strong>Download the PDF</strong> Static, searchable version for reading and notes</a></p>
 </div>
 </section>
 <section id="sources" class="level2">
