@@ -1,0 +1,83 @@
+/*-- scss:defaults --*/
+$font-family-sans-serif: "Work Sans", -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+$headings-font-weight: 600;
+$primary: #A63A4F;
+$link-color: #A63A4F;
+$body-color: #111111;
+$code-color: #7a2a3b;
+$code-block-bg: #faf7f2;
+
+/*-- scss:rules --*/
+:root {
+  --uu-red: #A63A4F;
+  --uu-green: #31a352;
+  --uu-blue: #3f6fb5;
+  --warm: #f1e7d9;
+  --warm-soft: #f8f5f1;
+  --warm-border: #eadfd2;
+}
+
+body { font-size: 1.06rem; line-height: 1.6; }
+h1, h2, h3 { letter-spacing: -0.01em; }
+h2 { border-top: 4px solid var(--uu-red); margin-top: 3rem; padding-top: 0.9rem; }
+h3 { margin-top: 1.8rem; }
+
+#title-block-header { display: none; }
+
+.hero { padding: 2.2rem 0 1.2rem; }
+.hero .kicker { color: var(--uu-red); font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; font-size: 0.85rem; }
+.hero h1 { font-size: clamp(2rem, 5vw, 3.1rem); font-weight: 500; line-height: 1.1; margin: 0.4rem 0 0.8rem; }
+.hero h1 strong { color: var(--uu-red); font-weight: 650; }
+.hero p.lead { font-size: 1.18rem; max-width: 46rem; }
+.hero .byline { color: #555; font-size: 0.95rem; }
+
+.jump { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 1.2rem 0 0.4rem; }
+.jump a { background: #fff; border: 2px solid var(--uu-red); border-radius: 999px; color: var(--uu-red); font-weight: 650; padding: 0.35rem 0.95rem; text-decoration: none; }
+.jump a.primary { background: var(--uu-red); color: #fff; }
+.jump a:hover { background: var(--uu-red); color: #fff; }
+
+.notice { background: #fff; border: 3px solid var(--uu-red); border-radius: 8px; margin: 1.4rem 0; padding: 0.9rem 1.1rem; }
+.notice p { margin: 0; }
+.notice strong { color: var(--uu-red); }
+
+.basics { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); margin: 1rem 0; }
+.basic { background: var(--warm-soft); border: 1px solid var(--warm-border); border-radius: 8px; border-top: 6px solid var(--uu-blue); padding: 0.9rem 1rem; }
+.basic h4 { font-size: 1.05rem; font-weight: 700; margin: 0 0 0.4rem; }
+.basic h4 span { color: var(--uu-blue); }
+.basic p { font-size: 0.97rem; margin: 0; }
+
+.steps ol { counter-reset: step; list-style: none; padding-left: 0; }
+.steps ol > li { counter-increment: step; margin: 0 0 0.8rem; padding-left: 2.6rem; position: relative; }
+.steps ol > li::before { align-items: center; background: var(--uu-green); border-radius: 999px; color: #fff; content: counter(step); display: flex; font-weight: 700; height: 1.8rem; justify-content: center; left: 0; position: absolute; top: 0.05rem; width: 1.8rem; }
+
+.timer { background: var(--uu-green); border-radius: 999px; color: #fff; display: inline-block; font-size: 0.9rem; font-weight: 700; padding: 0.12rem 0.7rem; }
+
+.download { align-items: center; background: #eef8f0; border-left: 5px solid var(--uu-green); border-radius: 6px; display: flex; flex-wrap: wrap; gap: 0.8rem; justify-content: space-between; margin: 1rem 0; padding: 0.8rem 1rem; }
+.download p { margin: 0; }
+.download a.button { background: var(--uu-green); border-radius: 999px; color: #fff; font-weight: 700; padding: 0.4rem 1rem; text-decoration: none; white-space: nowrap; }
+
+.word-tip { background: var(--warm-soft); border-left: 5px solid var(--uu-blue); border-radius: 6px; margin: 1rem 0; padding: 0.7rem 1rem; }
+.word-tip p { margin: 0; }
+
+.option { background: var(--warm-soft); border: 1px solid var(--warm-border); border-radius: 8px; border-top: 6px solid var(--uu-green); margin: 1.2rem 0; padding: 0.4rem 1.1rem 0.2rem; }
+.option h3 { margin-top: 0.6rem; }
+.option h3 .letter { background: var(--uu-green); border-radius: 999px; color: #fff; display: inline-flex; font-size: 0.95rem; height: 1.7rem; justify-content: center; align-items: center; margin-right: 0.4rem; width: 1.7rem; }
+
+/* Prompt blocks: dark chat-style boxes with copy button, wrapped prose */
+div.sourceCode:has(pre.prompt) { background: #292927 !important; border: 0; border-radius: 14px; margin: 0.8rem 0 1rem; }
+div.sourceCode pre.prompt, div.sourceCode pre.prompt code { background: transparent !important; color: #f2f0ea !important; font-family: "Work Sans", -apple-system, "Segoe UI", sans-serif; font-size: 1rem; line-height: 1.55; white-space: pre-wrap; }
+div.sourceCode pre.prompt { padding: 1rem 3rem 1rem 1.1rem; }
+div.sourceCode pre.prompt span { color: inherit !important; font-style: normal !important; font-weight: inherit !important; text-decoration: none !important; }
+div.sourceCode:has(pre.prompt) .code-copy-button { color: #f2f0ea !important; }
+div.sourceCode:has(pre.prompt) .code-copy-button:hover { color: #f0a77f !important; }
+
+/* The Markdown example stays a light code box */
+div.sourceCode:not(:has(pre.prompt)) { background: var(--warm-soft) !important; border: 1px solid var(--warm-border); border-radius: 8px; }
+
+.slides-card { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); margin: 1rem 0; }
+.slides-card a { background: #fff; border: 2px solid var(--warm-border); border-radius: 8px; color: #111; display: block; padding: 1rem; text-decoration: none; }
+.slides-card a:hover { border-color: var(--uu-red); }
+.slides-card strong { color: var(--uu-red); display: block; font-size: 1.1rem; }
+
+.refs p { margin-bottom: 0.7rem; }
+.small { color: #555; font-size: 0.9rem; }

@@ -1,0 +1,33 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - index.qmd
+  resources:
+    - assets/
+    - downloads/
+    - slides/
+    - .nojekyll
+
+website:
+  title: "Thinking with AI"
+  description: "Prompts, starter folder, slides, and sources for Tim Gåsste's lecture Why and How to Think with AI."
+  site-url: "https://timgasste.github.io/ai-thinking/"
+  page-navigation: false
+  reader-mode: false
+  search: false
+
+format:
+  html:
+    theme: [cosmo, styles.scss]
+    css: assets/fonts.css
+    toc: true
+    toc-location: right
+    toc-title: "On this page"
+    toc-depth: 2
+    code-copy: true
+    code-overflow: wrap
+    highlight-style: github
+    anchor-sections: true
+    smooth-scroll: true
+    lang: en

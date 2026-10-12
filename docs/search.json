@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Why and How to Think with AI",
+    "section": "",
+    "text": "Lecture page\n\n\n\n\nEverything you need for the two exercises in the lecture, plus the slides and the sources behind them. Keep this page open on your laptop while we work.\n\n\nTim Gåsste · Department of Peace and Conflict Research, Uppsala University\n\n\nExercise 1 Exercise 2 Slides Sources"
+  },
+  {
+    "objectID": "index.html#basics",
+    "href": "index.html#basics",
+    "title": "Why and How to Think with AI",
+    "section": "Three basics before you start",
+    "text": "Three basics before you start\n\n\n1 A folder on your computer\nAn ordinary folder in Finder (Mac) or File Explorer (Windows), not something inside the AI app. You choose which folder the agent may open.\n\n\n2 The app becomes an agent\nIn Work mode, the app reads the files in that folder, works on your task step by step, and saves new files there. You check and decide.\n\n\n3 Instructions in a text file\nMarkdown (.md) is plain text with a few marks: # for a heading, - for a bullet. Models read it most reliably. A Word file works too.\n\n\nA Markdown instructions file can be this short:\n# About me\n- MSc student in peace and conflict research\n- Quiz me before you explain\n- Ask before you overwrite a file"
+  },
+  {
+    "objectID": "index.html#exercise-1",
+    "href": "index.html#exercise-1",
+    "title": "Why and How to Think with AI",
+    "section": "Exercise 1: Set up your local agent",
+    "text": "Exercise 1: Set up your local agent\n10 minutes Build the “harness” you will use for the rest of the lecture: a folder, an agent that can work in it, and a standing instructions file.\n\nDon’t want to make folders by hand? Download the ready-made ai-lab folder (with this lecture’s slides in sources/) and unzip it anywhere on your computer.\nDownload ai-lab.zip\n\n\n\nCreate a normal folder on your computer (anywhere, e.g. in Documents) called ai-lab, with two subfolders: sources and outputs. Or use the download above.\nOpen the ChatGPT desktop app (a free account works), or an app you already use that can work in a folder. Choose Work and open ai-lab.\nGive it the task below, and answer its questions.\nOpen INSTRUCTIONS.md. Check it, and change one thing yourself.\n\n\nYour first task:\nInterview me with five short questions, one at a time, about my studies, my goals, and how I want you to help me learn. Then save my answers and these rules as INSTRUCTIONS.md in this folder: use only files in this folder, never invent sources, and ask before you overwrite a file.\n\nPrefer Word? Ask for INSTRUCTIONS.docx instead of INSTRUCTIONS.md. Markdown is plain text, which models read most reliably, but a Word file works too.\n\nNo Work mode on your account? Pair up with a neighbour, or paste the task into a normal chat and save the answer as INSTRUCTIONS.md (or a Word file) yourself."
+  },
+  {
+    "objectID": "index.html#exercise-2",
+    "href": "index.html#exercise-2",
+    "title": "Why and How to Think with AI",
+    "section": "Exercise 2: Put your agent to work",
+    "text": "Exercise 2: Put your agent to work\n10 minutes In ai-lab, put material in sources/: this lecture’s PDF (already there if you downloaded the folder) or your own notes. Word files and PDFs are fine. Then pick one option and replace the [brackets] with your own concept or argument.\n\nA Study partner\nPractise retrieval on something you need to know. Saves outputs/flashcards.csv.\nQuiz me on [concept] using only sources/, one question at a time. Then save flashcards for my weak spots.\n\n\nB Sparring partner\nStress-test an argument you are working on. Saves outputs/steelman.md.\nSteelman the strongest objection to [my argument] and list my unsupported leaps. Do not rewrite my text.\n\n\nC Explain and listen\nGet a hard idea explained the way you learn best. Saves outputs/explainer.md. Many apps can read the script aloud.\nExplain [hard concept] at my level, with an example from my field, as a three-minute script I can listen to.\n\nAfterwards: tell your neighbour one thing the agent got wrong, or one thing you now understand better."
+  },
+  {
+    "objectID": "index.html#more-prompts",
+    "href": "index.html#more-prompts",
+    "title": "Why and How to Think with AI",
+    "section": "More prompts from the lecture",
+    "text": "More prompts from the lecture\n\nYour study partner (Socratic tutor)\nA Socratic tutor teaches by asking rather than telling: one question at a time, hints when you are stuck, and an explanation only after you have tried. The set-up matters. In a large field experiment, students with a plain chatbot did better while practising but worse on a later exam without AI, while a tutor-style version that gave hints instead of answers avoided that drop (Bastani et al. 2025).\nRead INSTRUCTIONS.md. Using only sources/, quiz me on the hardest concept, one question at a time, and wait for my answer before you explain. Then save flashcards for my weak spots in outputs/.\n\n\nYour sparring partner\nThe AI critiques; you revise and write. Put your outline in a working/ folder first.\nRead INSTRUCTIONS.md and working/outline.md. Do not rewrite my text. Steelman the strongest objection, list my unsupported leaps, and save both in outputs/. Then ask me three hard questions.\n\n\nAnatomy of a good question\nYou do not need prompt templates any more, but a good question still says what you want, why, what you know, which material to use, what to avoid, and how you will judge the answer. The numbers mark the eight elements: task, purpose, context, material, constraints, format, evaluation, and interaction.\n(1) Help me assess whether political exclusion increases the risk of organized political violence. (2) I want to sharpen a research question before drafting a theory section, not receive a finished argument. (3) I am working in peace and conflict research and preparing a graduate seminar memo, so focus on mechanisms, scope conditions, alternative explanations, and observable implications. (4) Use only the notes and source excerpts I paste below. (5) Separate author claims from your inferences, mark unsupported claims as \"needs source\", and do not invent citations. (6) Return a four-step causal pathway, two counterarguments, three questions I must answer, and one next prompt. (7) A strong answer is specific, source-bounded, mechanism-focused, and honest about uncertainty. (8) Ask one clarifying question if needed, then wait for my response before revising the research question."
+  },
+  {
+    "objectID": "index.html#responsibly",
+    "href": "index.html#responsibly",
+    "title": "Why and How to Think with AI",
+    "section": "Use it responsibly",
+    "text": "Use it responsibly\n\nConfidentiality and copyright. Do not upload confidential data or copyrighted material without approval or clearance. Your own notes and this lecture’s slides are fine.\nFile access. The agent can edit files. Give it one folder, not your whole computer, and ask it to check with you before overwriting anything.\nVerification. Tell it never to invent sources, and check every number, quote, and source yourself. You remain responsible for your work.\nMake the knowledge yours. If you cannot explain and defend it, it is not yours yet."
+  },
+  {
+    "objectID": "index.html#slides",
+    "href": "index.html#slides",
+    "title": "Why and How to Think with AI",
+    "section": "Slides",
+    "text": "Slides\n\nOpen the slides Interactive version in your browser\nDownload the PDF Static version for reading and notes"
+  },
+  {
+    "objectID": "index.html#sources",
+    "href": "index.html#sources",
+    "title": "Why and How to Think with AI",
+    "section": "Sources and further listening",
+    "text": "Sources and further listening\n\nThe views and workflows in this lecture are my own. Many of the ideas build on these commentators, and I recommend following them.\nEthan Mollick (2026). “The Overhang.” One Useful Thing, 18 September.\nEthan Mollick (2026). “The Dot and the Swarm.” One Useful Thing, 1 October.\nAndrej Karpathy coined “vibe coding” (February 2025) and proposed “agentic engineering” (February 2026) in posts on X.\nSebastian Raschka (2026). “Components of a Coding Agent.” Ahead of AI, 4 April.\nJensen Huang (2025). Remarks at the Milken Institute Global Conference, 6 May. Reported by CNBC, 28 May.\nNPR (2026). “Why AI companies are hiring philosophers to help develop their models.” All Things Considered, 7 July.\nBastani, H., et al. (2025). “Generative AI without guardrails can harm learning: Evidence from high school mathematics.” PNAS 122(26).\nJonas von Essen and Benjamin Verbeek. AI med Jonas & Benjamin (podcast, in Swedish). Jonas von Essen on YouTube.\n\n\nImage credit in the slides: Jensen Huang, official White House photo by Daniel Torok (public domain). Questions or corrections: tim.gasste@pcr.uu.se."
+  }
+]

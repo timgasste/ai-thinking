@@ -1,0 +1,191 @@
+---
+title: "Why and How to Think with AI"
+pagetitle: "Why and How to Think with AI · lecture page"
+---
+
+::: {.hero}
+::: {.kicker}
+Lecture page
+:::
+
+# Why and How to Think with AI: <strong>prompts, starter folder, and slides</strong>
+
+::: {.lead}
+Everything you need for the two exercises in the lecture, plus the slides and the sources behind them. Keep this page open on your laptop while we work.
+:::
+
+::: {.byline}
+Tim Gåsste · Department of Peace and Conflict Research, Uppsala University
+:::
+
+::: {.jump}
+[Exercise 1](#exercise-1){.primary} [Exercise 2](#exercise-2) [Slides](#slides) [Sources](#sources)
+:::
+:::
+
+::: {.notice}
+**Important:** this is an inspirational lecture on thinking with AI. It is **not a general permission to use AI in your studies.** Always follow the AI rules for your course module, and ask your course convener when in doubt. The views and workflows here are my own; they build on the commentators listed under [Sources](#sources).
+:::
+
+## Three basics before you start {#basics}
+
+::: {.basics}
+::: {.basic}
+#### [1]{} A folder on your computer
+
+An ordinary folder in Finder (Mac) or File Explorer (Windows), not something inside the AI app. You choose which folder the agent may open.
+:::
+
+::: {.basic}
+#### [2]{} The app becomes an agent
+
+In **Work** mode, the app reads the files in that folder, works on your task step by step, and saves new files there. You check and decide.
+:::
+
+::: {.basic}
+#### [3]{} Instructions in a text file
+
+**Markdown** (`.md`) is plain text with a few marks: `#` for a heading, `-` for a bullet. Models read it most reliably. **A Word file works too.**
+:::
+:::
+
+A Markdown instructions file can be this short:
+
+```markdown
+# About me
+- MSc student in peace and conflict research
+- Quiz me before you explain
+- Ask before you overwrite a file
+```
+
+## Exercise 1: Set up your local agent {#exercise-1}
+
+[10 minutes]{.timer} Build the "harness" you will use for the rest of the lecture: a folder, an agent that can work in it, and a standing instructions file.
+
+::: {.download}
+Don't want to make folders by hand? Download the ready-made **ai-lab** folder (with this lecture's slides in `sources/`) and unzip it anywhere on your computer.
+
+[Download ai-lab.zip](downloads/ai-lab.zip){.button}
+:::
+
+::: {.steps}
+1. **Create a normal folder on your computer** (anywhere, e.g. in Documents) called `ai-lab`, with two subfolders: `sources` and `outputs`. Or use the download above.
+2. **Open the ChatGPT desktop app** (a free account works), or an app you already use that can work in a folder. Choose **Work** and open `ai-lab`.
+3. **Give it the task below**, and answer its questions.
+4. **Open `INSTRUCTIONS.md`.** Check it, and change one thing yourself.
+:::
+
+Your first task:
+
+```{.markdown .prompt}
+Interview me with five short questions, one at a time, about my studies, my goals, and how I want you to help me learn. Then save my answers and these rules as INSTRUCTIONS.md in this folder: use only files in this folder, never invent sources, and ask before you overwrite a file.
+```
+
+::: {.word-tip}
+**Prefer Word?** Ask for `INSTRUCTIONS.docx` instead of `INSTRUCTIONS.md`. Markdown is plain text, which models read most reliably, but a Word file works too.
+:::
+
+**No Work mode on your account?** Pair up with a neighbour, or paste the task into a normal chat and save the answer as `INSTRUCTIONS.md` (or a Word file) yourself.
+
+## Exercise 2: Put your agent to work {#exercise-2}
+
+[10 minutes]{.timer} In `ai-lab`, put material in `sources/`: this lecture's PDF (already there if you downloaded the folder) or your own notes. Word files and PDFs are fine. Then pick **one** option and replace the [brackets] with your own concept or argument.
+
+::: {.option}
+### [A]{.letter} Study partner
+
+Practise retrieval on something you need to know. Saves `outputs/flashcards.csv`.
+
+```{.markdown .prompt}
+Quiz me on [concept] using only sources/, one question at a time. Then save flashcards for my weak spots.
+```
+:::
+
+::: {.option}
+### [B]{.letter} Sparring partner
+
+Stress-test an argument you are working on. Saves `outputs/steelman.md`.
+
+```{.markdown .prompt}
+Steelman the strongest objection to [my argument] and list my unsupported leaps. Do not rewrite my text.
+```
+:::
+
+::: {.option}
+### [C]{.letter} Explain and listen
+
+Get a hard idea explained the way you learn best. Saves `outputs/explainer.md`. Many apps can read the script aloud.
+
+```{.markdown .prompt}
+Explain [hard concept] at my level, with an example from my field, as a three-minute script I can listen to.
+```
+:::
+
+**Afterwards:** tell your neighbour one thing the agent got wrong, or one thing you now understand better.
+
+## More prompts from the lecture {#more-prompts}
+
+### Your study partner (Socratic tutor)
+
+A Socratic tutor teaches by asking rather than telling: one question at a time, hints when you are stuck, and an explanation only after you have tried. The set-up matters. In a large field experiment, students with a plain chatbot did better while practising but worse on a later exam without AI, while a tutor-style version that gave hints instead of answers avoided that drop ([Bastani et al. 2025](https://doi.org/10.1073/pnas.2422633122)).
+
+```{.markdown .prompt}
+Read INSTRUCTIONS.md. Using only sources/, quiz me on the hardest concept, one question at a time, and wait for my answer before you explain. Then save flashcards for my weak spots in outputs/.
+```
+
+### Your sparring partner
+
+The AI critiques; you revise and write. Put your outline in a `working/` folder first.
+
+```{.markdown .prompt}
+Read INSTRUCTIONS.md and working/outline.md. Do not rewrite my text. Steelman the strongest objection, list my unsupported leaps, and save both in outputs/. Then ask me three hard questions.
+```
+
+### Anatomy of a good question
+
+You do not need prompt templates any more, but a good question still says what you want, why, what you know, which material to use, what to avoid, and how you will judge the answer. The numbers mark the eight elements: task, purpose, context, material, constraints, format, evaluation, and interaction.
+
+```{.markdown .prompt}
+(1) Help me assess whether political exclusion increases the risk of organized political violence. (2) I want to sharpen a research question before drafting a theory section, not receive a finished argument. (3) I am working in peace and conflict research and preparing a graduate seminar memo, so focus on mechanisms, scope conditions, alternative explanations, and observable implications. (4) Use only the notes and source excerpts I paste below. (5) Separate author claims from your inferences, mark unsupported claims as "needs source", and do not invent citations. (6) Return a four-step causal pathway, two counterarguments, three questions I must answer, and one next prompt. (7) A strong answer is specific, source-bounded, mechanism-focused, and honest about uncertainty. (8) Ask one clarifying question if needed, then wait for my response before revising the research question.
+```
+
+## Use it responsibly {#responsibly}
+
+- **Confidentiality and copyright.** Do not upload confidential data or copyrighted material without approval or clearance. Your own notes and this lecture's slides are fine.
+- **File access.** The agent can edit files. Give it one folder, not your whole computer, and ask it to check with you before overwriting anything.
+- **Verification.** Tell it never to invent sources, and check every number, quote, and source yourself. You remain responsible for your work.
+- **Make the knowledge yours.** If you cannot explain and defend it, it is not yours yet.
+
+## Slides {#slides}
+
+::: {.slides-card}
+[**Open the slides** Interactive version in your browser](slides/index.html)
+
+[**Download the PDF** Static version for reading and notes](downloads/why-and-how-to-think-with-ai.pdf)
+:::
+
+## Sources and further listening {#sources}
+
+::: {.refs}
+The views and workflows in this lecture are my own. Many of the ideas build on these commentators, and I recommend following them.
+
+**Ethan Mollick** (2026). "[The Overhang](https://www.oneusefulthing.org/p/the-overhang)." *One Useful Thing*, 18 September.
+
+**Ethan Mollick** (2026). "[The Dot and the Swarm](https://www.oneusefulthing.org/p/the-dot-and-the-swarm)." *One Useful Thing*, 1 October.
+
+**Andrej Karpathy** coined "vibe coding" (February 2025) and proposed "agentic engineering" (February 2026) in posts on X.
+
+**Sebastian Raschka** (2026). "[Components of a Coding Agent](https://magazine.sebastianraschka.com/p/components-of-a-coding-agent)." *Ahead of AI*, 4 April.
+
+**Jensen Huang** (2025). Remarks at the Milken Institute Global Conference, 6 May. Reported by CNBC, 28 May.
+
+**NPR** (2026). "Why AI companies are hiring philosophers to help develop their models." *All Things Considered*, 7 July.
+
+**Bastani, H., et al.** (2025). "[Generative AI without guardrails can harm learning: Evidence from high school mathematics](https://doi.org/10.1073/pnas.2422633122)." *PNAS* 122(26).
+
+**Jonas von Essen and Benjamin Verbeek.** *AI med Jonas & Benjamin* (podcast, in Swedish). Jonas von Essen on [YouTube](https://www.youtube.com/@BlueberryClubSparven).
+:::
+
+::: {.small}
+Image credit in the slides: Jensen Huang, official White House photo by Daniel Torok (public domain). Questions or corrections: [tim.gasste@pcr.uu.se](mailto:tim.gasste@pcr.uu.se).
+:::
