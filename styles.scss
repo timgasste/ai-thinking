@@ -101,3 +101,7 @@ div.sourceCode:not(:has(pre.prompt)) { background: var(--warm-soft) !important; 
   .jump a.primary { grid-column: 1 / -1; }
   .hero h1 { font-size: 2rem; }
 }
+
+.hero-slides { color: #333; font-size: 0.98rem; margin: 0.6rem 0 0; text-align: center; }
+.hero-slides p { margin: 0; }
+.hero-slides a { color: #0645ad; font-weight: 650; }

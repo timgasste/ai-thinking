@@ -23,6 +23,10 @@ Tim Gåsste · Department of Peace and Conflict Research, Uppsala University
 :::
 
 [**Download the ai-lab starter folder** (.zip, with the slides inside)](downloads/ai-lab.zip){.download-bar}
+
+::: {.hero-slides}
+Slides: [open in your browser](slides/index.html) · [download the PDF](downloads/why-and-how-to-think-with-ai.pdf)
+:::
 :::
 
 ::: {.notice}
@@ -31,7 +35,7 @@ Tim Gåsste · Department of Peace and Conflict Research, Uppsala University
 
 ## Get ready at the start {#get-ready}
 
-Do this at the start of the lecture. The download runs in the background while we talk, and you will need the app in Exercise 1.
+Do this before the lecture starts if you can, or at the very start. Today you will create your own AI agent and use it to think, and you will need the app in Exercise 1.
 
 ::: {.steps}
 1. **Download the ChatGPT desktop app** for Mac, Windows, or Linux from OpenAI's [quickstart page](https://learn.chatgpt.com/docs/quickstart).
@@ -39,7 +43,7 @@ Do this at the start of the lecture. The download runs in the background while w
 3. **[Download the ready-made ai-lab folder](downloads/ai-lab.zip)** and unzip it into your **Documents** folder.
 :::
 
-**A free account is enough,** today and after the lecture. See [Keep going after today](#keep-going).
+**A free account is enough for today's exercises.** See [Keep going after today](#keep-going) for what comes next.
 
 Stuck, or just curious? Ask at any point. There are no stupid questions about AI.
 
@@ -139,7 +143,7 @@ Interview me with five short questions, one at a time, about my studies, my goal
 
 [10 minutes]{.timer} Use this lecture's PDF in `sources/` (already there if you downloaded the folder), or add your own notes. Word files, PDFs, and spreadsheets are fine. Then **pick one option. One is enough.** Replace the [brackets] with your own concept or argument.
 
-Every prompt starts with **"Read my INSTRUCTIONS file,"** because the agent does not read it on its own, and ends by saying **where to save**, because otherwise it only answers in the chat.
+Every prompt starts with **"Read my INSTRUCTIONS file,"** because the agent does not read it on its own. It also says **when to save** (right away, after each mistake, or before showing you the answer), because otherwise the agent may only answer in the chat.
 
 ::: {.option}
 ### [A]{.letter} Study partner
@@ -147,7 +151,7 @@ Every prompt starts with **"Read my INSTRUCTIONS file,"** because the agent does
 Practice retrieval on something you need to know. Saves flashcards in `outputs/` (ask for an Excel file if you prefer).
 
 ```{.markdown .prompt}
-Read my INSTRUCTIONS file. Quiz me on [concept] using only sources/, three questions, one at a time. Then save flashcards for my weak spots in outputs/.
+Read my INSTRUCTIONS file. Quiz me on [concept] using only sources/, three questions, one at a time. Each time I get one wrong, add a flashcard to outputs/ right away.
 ```
 :::
 
@@ -157,7 +161,7 @@ Read my INSTRUCTIONS file. Quiz me on [concept] using only sources/, three quest
 Stress-test an argument you are working on. Saves the critique in `outputs/` (ask for Word if you prefer).
 
 ```{.markdown .prompt}
-Read my INSTRUCTIONS file. Steelman the strongest objection to [my argument] and list my unsupported leaps. Do not rewrite my text. Save it in outputs/.
+Read my INSTRUCTIONS file. Steelman the strongest objection to [my argument] and list my unsupported leaps. Do not rewrite my text. Save it to outputs/ first, then show me.
 ```
 :::
 
@@ -167,7 +171,7 @@ Read my INSTRUCTIONS file. Steelman the strongest objection to [my argument] and
 Get a hard idea explained the way you learn best. Saves the script in `outputs/`. Click the speaker icon under the answer to hear it read aloud.
 
 ```{.markdown .prompt}
-Read my INSTRUCTIONS file. Explain [hard concept] from sources/ at my level, as a three-minute script I can listen to. Save it in outputs/.
+Read my INSTRUCTIONS file. Explain [hard concept] from sources/ at my level, as a three-minute script I can listen to. Save it to outputs/ first, then show me.
 ```
 :::
 
@@ -177,9 +181,9 @@ Read my INSTRUCTIONS file. Explain [hard concept] from sources/ at my level, as 
 
 ## Keep going after today {#keep-going}
 
-The free plan goes a long way. On ChatGPT Free, Work (and the related agents, such as Codex) has a **monthly usage limit**, and ordinary chats do not count toward it. When I tested every step of both exercises on a free account, it used **about 6%** of that monthly allowance.
+The free plan is enough for simple tasks like today's, but it is limited. On ChatGPT Free, Work (and the related agents, such as Codex) has a **monthly usage limit**, and ordinary chats do not count toward it. When I tested every step of both exercises on a free account, it used **about 6%** of that allowance. Paid plans give you stronger models and far more usage, and with a stronger model and a creative agent setup, the sky is the limit.
 
-- **Keep the default model** (6 Luna Medium in October 2026). It was fast, accurate, and stayed within the sources.
+- **On the free plan, keep the default model** (6 Luna Medium in October 2026). It was fast, accurate, and stayed within the sources.
 - **See what you have left** under Settings → Usage & billing.
 - **Make it a habit.** Keep the `ai-lab` project. Before a seminar, ask your study partner to quiz you on the readings. Before you hand in a draft, ask your sparring partner for the strongest objection.
 
@@ -188,7 +192,7 @@ Limits and model names change. These figures are from October 2026.
 ## Which tool? {#tools}
 
 - **Start here:** choose one general assistant (ChatGPT, Claude, Gemini, Grok, Microsoft Copilot, or Perplexity), use it, and learn it well. That is where you get the most value for the least effort.
-- **Answers only from your own documents:** NotebookLM, now called Gemini Notebook, answers from the documents you give it and cites the passage behind each answer. Use it when nothing else should creep in: a contract, a court ruling, a policy, or your course readings.
+- **Answers only from your own documents:** NotebookLM, now called Gemini Notebook, answers from the documents you give it and cites the passage behind each answer. Use it when nothing else should creep in: a contract, a court ruling, a policy, or your **cleared** course readings.
 - **Literature:** Elicit, Semantic Scholar, Scite, and Litmaps help you discover and assess research. Zotero manages your references.
 - **Agents in a folder:** ChatGPT (Work and Codex), Claude, GitHub Copilot, and Cursor can work inside a project folder.
 
@@ -211,7 +215,7 @@ This is the long version, written out in full for a research task. Most question
 A Socratic tutor teaches by asking rather than telling: one question at a time, hints when you are stuck, and an explanation only after you have tried. The set-up matters. In a large field experiment, students with a plain chatbot did better while practicing but worse on a later exam without AI, while a tutor-style version that gave hints instead of answers avoided that drop ([Bastani et al. 2025](https://doi.org/10.1073/pnas.2422633122)).
 
 ```{.markdown .prompt}
-Read my INSTRUCTIONS file. Using only sources/, quiz me on the hardest concept, one question at a time, and wait for my answer before you explain. Then save flashcards for my weak spots in outputs/.
+Read my INSTRUCTIONS file. Using only sources/, quiz me on the hardest concept, one question at a time, and wait for my answer before you explain. Each time I get one wrong, add a flashcard to outputs/ right away.
 ```
 
 ### Your sparring partner
@@ -219,7 +223,7 @@ Read my INSTRUCTIONS file. Using only sources/, quiz me on the hardest concept, 
 The AI critiques, and you revise and write. Put your outline in a `working/` folder first (a Word file is fine).
 
 ```{.markdown .prompt}
-Read my INSTRUCTIONS file and working/outline.md. Do not rewrite my text. Steelman the strongest objection, list my unsupported leaps, and save both in outputs/. Then ask me three hard questions.
+Read my INSTRUCTIONS file and working/outline.md. Do not rewrite my text. Save a steelman of the strongest objection and a list of my unsupported leaps to outputs/ first. Then ask me three hard questions.
 ```
 
 ### Working with data
@@ -227,11 +231,11 @@ Read my INSTRUCTIONS file and working/outline.md. Do not rewrite my text. Steelm
 Put your output or script in `sources/` first (a text file, a Word file, or a screenshot). Without it, the agent says it cannot see any output rather than inventing numbers. The model explains, and you decide what the numbers mean.
 
 ```{.markdown .prompt}
-Read my INSTRUCTIONS file. Explain the regression output in sources/ line by line, at my level. Tell me what I can and cannot conclude from it, and do not invent any numbers.
+Read my INSTRUCTIONS file. Explain the regression output in sources/ line by line, at my level. Tell me what I can and cannot conclude from it, and do not invent any numbers. Save the explanation to outputs/ first, then show me.
 ```
 
 ```{.markdown .prompt}
-Read my INSTRUCTIONS file. Comment my R script in sources/ line by line so I understand each step. Suggest one improvement, but do not change what the script does without asking me.
+Read my INSTRUCTIONS file. Comment my R script in sources/ line by line so I understand each step, and save the commented copy to outputs/ first. Suggest one improvement, but do not change what the script does without asking me.
 ```
 
 ## Use it responsibly {#responsibly}
@@ -265,9 +269,9 @@ The views and workflows in this lecture are my own. Many of the ideas build on t
 
 **Jensen Huang** (2025). Remarks at the Milken Institute Global Conference, 6 May. Reported by CNBC, 28 May.
 
-**NPR** (2026). "Why AI companies are hiring philosophers to help develop their models." *All Things Considered*, 7 July.
+**NPR** (2026). "[Why AI companies are hiring philosophers to help develop their models](https://www.kunc.org/2026-07-07/why-ai-companies-are-hiring-philosophers-to-help-develop-their-models)." *All Things Considered*, 7 July. Scott Detrow interviews Benjamin Sutherland of *The Economist*.
 
-**Bastani, H., et al.** (2025). "[Generative AI without guardrails can harm learning: Evidence from high school mathematics](https://doi.org/10.1073/pnas.2422633122)." *PNAS* 122(26).
+**Bastani, H., Bastani, O., Sungu, A., Ge, H., Kabakcı, Ö., and Mariman, R.** (2025). "[Generative AI without guardrails can harm learning: Evidence from high school mathematics](https://doi.org/10.1073/pnas.2422633122)." *Proceedings of the National Academy of Sciences* 122(26): e2422633122.
 
 **Jonas von Essen and Benjamin Verbeek.** *AI med Jonas & Benjamin* (podcast, in Swedish). Jonas von Essen on [YouTube](https://www.youtube.com/@BlueberryClubSparven).
 :::

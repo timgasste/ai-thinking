@@ -36,7 +36,8 @@ Markdown (`.md`) is plain text, which models read most reliably.
 
 Pick one prompt from the lecture page and replace the [brackets] with your own
 concept or argument. Start every prompt with "Read my INSTRUCTIONS file" and
-say where to save, for example "Save it in outputs/".
+say when to save, for example "Save it to outputs/ first, then show me" or
+"Each time I get one wrong, add a flashcard to outputs/ right away".
 
 Follow the AI rules for your course. This lecture is not a general permission
 to use AI in your studies.
