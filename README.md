@@ -8,12 +8,12 @@ slides, and the sources. Published (after review) at
 ## Build
 
 ```bash
-# 1. Export the deck first (in ../presentations): make export-final
+# 1. Export the deck first (in ../puma-ai-presentations): make export-final
 scripts/build.sh
 ```
 
 `build.sh` copies the audience slides and PDF from
-`../presentations/output/final-output/`, zips `starter-kit/ai-lab` (adding a Word
+`../puma-ai-presentations/output/final-output/`, zips `starter-kit/ai-lab` (adding a Word
 copy of `START-HERE.md` and the slides PDF), checks that every prompt on the
 slides appears word for word in `index.qmd`, and renders the site into `docs/`.
 

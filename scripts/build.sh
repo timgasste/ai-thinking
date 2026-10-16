@@ -3,7 +3,7 @@
 # check that the prompts match the slides, and render the site into docs/.
 set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-DECK="${DECK:-$ROOT/../presentations}"
+DECK="${DECK:-$ROOT/../puma-ai-presentations}"
 EXPORT="$DECK/output/final-output"
 PDF_NAME="why-and-how-to-think-with-ai.pdf"
 

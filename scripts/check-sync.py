@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Check that every prompt shown on the slides also appears, word for word, on the page.
 
-Usage: scripts/check-sync.py ../presentations/presentation.qmd index.qmd
+Usage: scripts/check-sync.py ../puma-ai-presentations/presentation.qmd index.qmd
 """
 import html, re, sys
 
